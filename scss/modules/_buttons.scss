@@ -1,0 +1,23 @@
+/* buttons */
+
+.btn-red {
+    background: $dark-red;
+    border-color: $light;
+    color: $white;
+    &:hover,
+    &:focus,
+    &:active {
+        background: $light-red;
+    }
+}
+
+.btn-green {
+    background: $dark-green;
+    border-color: $light;
+    color: $white;
+    &:hover,
+    &:focus,
+    &:active {
+        background: $light-green;
+    }
+}

@@ -1,0 +1,68 @@
+html {
+    font-size: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background: $dark;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    @include transitionProperty(color 0.5s ease);
+    color: $light-red;
+    &:focus,
+    &:hover,
+    &:active {
+        outline: none !important;
+        text-decoration: none !important;
+        color: $dark-red;
+    }
+}
+
+img {
+    vertical-align: top;
+    height: auto;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url('../img/loader.svg') 50% 50% no-repeat $light;
+    z-index: 9999;
+    background-size: 4rem;
+}
+.bg-green{
+    background: $light-green;
+}
+.parallex{
+    background: rgba(0, 0, 0, 0.6) url(../img/background.jpeg) no-repeat fixed 100% 100%; // 1500*800 Best Image for Paralllex
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    color: $white;
+    text-align: center;
+}
+.overlay {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.scrollUp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+    font-size: 1.2rem;
+    padding: 3px 10px;
+    outline: none;
+    display: none;
+}

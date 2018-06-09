@@ -1,0 +1,51 @@
+#header {
+    .navbar {
+        @include media-breakpoint-down(sm) {
+            background: $dark;
+        }
+        .navbar-toggler {
+            outline: none;
+            color: $light;
+            border: none;
+        }
+        .navbar-brand {
+            color: $light;
+        }
+    }
+    #main-navigation {
+        .navbar-nav {
+            li {
+                a {
+                    color: $light;
+                    @include media-breakpoint-up(md) {
+                        padding: 0 1rem;
+                    }
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: $dark-red;
+                    }
+                }
+            }
+        }
+    }
+    &.dark-bg {
+        .navbar {
+            background: $dark-red;
+            a {
+                color: $white;
+            }
+            .navbar-nav {
+                li {
+                    a {
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            color: $light !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

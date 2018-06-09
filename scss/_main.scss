@@ -1,0 +1,132 @@
+/*
+Theme Name: Healthy
+Theme URI: https://www.orbitthemes.com
+Author: Sandeep Prasad Bhatt
+Author URI: http://www.sandeepbhatt.com.np
+Description: Healthy - Beautiful Fitness Template
+Create date: April 13, 2018
+Version: 1.0
+License: Commercial, All rights reserved - orbitthemes.com
+Tags: Responsive Bootstrap 4 template , bootstrap 4 healthy fitness template, bootstrap4 template, fitness template
+Text Domain: orbitthemes.com
+*/
+
+#main {
+    background: $white;
+    font-family: "Open Sans", sans-serif;
+    #main-banner {
+        background-image: url(../img/background.jpeg);
+    }
+    #featured {
+        background: $light-green;
+        padding: 5rem 0 0;
+        color: $white;
+        font-family: "Open Sans", sans-serif;
+        .feature {
+            i {
+                color: $light;
+            }
+            h2 {
+                font-size: 1.6rem;
+                margin-top: 1rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            a {
+                font-size: 0.8rem;
+                color: $white;
+                i {
+                    font-size: 0.8rem;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+        .gallary {
+            .gallery-text {
+                h3 {
+                    color: $light-red;
+                    text-transform: uppercase;
+                }
+                h4 {
+                    color: $light-green;
+                }
+                p {
+                    font-size: 0.9rem;
+                    i {
+                        color: $dark-red;
+                    }
+                }
+                button {
+                    i {
+                        font-size: 0.7rem;
+                        margin-left: 0.4rem;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .large-thumb {
+                background: url("../img/gallery-1.jpg") center no-repeat;
+                background-size: cover;
+                @include media-breakpoint-down(md) {
+                    min-height: 300px;
+                }
+            }
+        }
+    }
+    #main-gallery {
+        background: $light-red;
+        .gallary {
+            font-family: "Open Sans", sans-serif;
+            .small-thumb {
+                background: url("../img/gallery-3.jpg") 100% 0 no-repeat;
+                background-size: cover;
+                height: 300px;
+            }
+            .large-thumb {
+                background: url("../img/gallery-4.jpg") 100% 0 no-repeat;
+                background-size: cover;
+                height: 300px;
+                .thumb-text {
+                    color: $white;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+            .text-block {
+                h4 {
+                    color: $dark-red;
+                    text-align: left;
+                    &.large-block-heading{
+                        font-size: 3rem;
+                        color: $white;
+                        text-align: center;
+                    }
+                }
+                h5 {
+                    color: $dark-green;
+                    text-align: left;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                }
+                p {
+                    font-size: 0.8rem;
+                }
+                i {
+                    position: absolute;
+                    right: 5%;
+                    top: 10%;
+                }
+            }
+        }
+    }
+    #bottom-banner{
+        &.parallex{
+            background-image: url(../img/gallery-4.jpg);
+            background-position: 100% 0;
+        }
+        .overlay{
+            padding: 5rem 0;
+        }
+    }
+}
